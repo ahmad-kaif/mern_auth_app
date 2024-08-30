@@ -12,7 +12,6 @@ app.use(express.json());
 app.use(cookieParser());
 
 const PORT = process.env.PORT || 3000;
-connectDB();
 
 app.use("/api/auth",authRoutes);
 
@@ -24,4 +23,7 @@ app.use("/api/auth",authRoutes);
 //     res.send('Login Page');
 // });
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+app.listen(PORT, () => {
+    connectDB();
+    console.log(`server running on port ${PORT}`)
+});
