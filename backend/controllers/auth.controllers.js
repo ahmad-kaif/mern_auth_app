@@ -26,7 +26,7 @@ export const signup = async (req,res) => {
             password:hashedPassword,
             gender
         })
-        
+
         if(newUser){
             //generate jwt token here
             generaateTokenAndSetCookie(newUser._id,res);
@@ -49,7 +49,7 @@ export const signup = async (req,res) => {
 }
 
 export const login =  async (req,res) => {
-    // res.send(`login  page`);
+    res.send(`login  page`);
 }
 
 export const logout = async (req,res) => {
