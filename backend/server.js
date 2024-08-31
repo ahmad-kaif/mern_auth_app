@@ -15,14 +15,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use("/api/auth",authRoutes);
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!');
-// });
-
-// app.get('/login', (req, res) => {
-//     res.send('Login Page');
-// });
-
 app.listen(PORT, () => {
     connectDB();
     console.log(`server running on port ${PORT}`)
