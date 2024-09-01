@@ -16,7 +16,7 @@ const Signup = () => {
   }
 
   const handleChange = (e) =>{
-    setInputs({...inputs,[e.target.name]: e.target.value})
+    setInputs({...inputs,[e.target.name]: e.target.value});
   }
 
   return (
