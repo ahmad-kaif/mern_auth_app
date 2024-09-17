@@ -15,12 +15,8 @@ const useSignup = () => {
         }finally{
             setLoading(false);
         }
-
-
-
-        
-
     }
+
   return {loading,signup};
 }
 
